@@ -1,46 +1,139 @@
 @import './base.css';
 
-header{
+/* start header */
+header {
     position: sticky;
     top: 0;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding: 20px 0;
 }
+
 .nav ul {
     display: flex;
     gap: 16px;
     flex-wrap: wrap;
 }
-header .logo{
+
+header .logo {
     display: flex;
     align-items: center;
     gap: 10px;
     flex-wrap: wrap;
 }
-header .logo img{
+
+header .logo img {
     width: 35px;
 }
-header .logo a{
+
+header .logo a {
     color: var(--mainColor);
 }
-header .nav a{
+
+header .nav a {
     color: #101928;
 }
-header .auth a{
+
+header .auth a {
     font-family: var(--subFont);
     padding: 10px 30px;
     border-radius: 5px;
 }
-header .auth a:first-of-type{
+
+header .auth a:first-of-type {
     border: 1px solid var(--mainColor);
     color: var(--mainColor);
 }
-header .auth a:last-of-type{
+
+header .auth a:last-of-type {
     background-color: var(--mainColor);
     color: #fff;
 }
+
 @media (max-width:950px) {
-    .nav{
+    .nav {
         display: none;
     }
 }
+
+/* end header */
+
+/* start footer */
+.footer {
+    background-color: #393E46;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.footer .row {
+    gap: 40px;
+}
+
+.footer .footer-start,
+.footer .footer-end {
+    width: calc((100% - 40px) / 2);
+}
+
+.footer .footer-start {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.footer .footer-start .logo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.footer .footer-start img {
+    width: 35px;
+}
+
+.footer .footer-start .logo a {
+    font-size: 14px;
+}
+
+.footer .footer-start p {
+    color: #F4F4F4;
+    line-height: 20px;
+    font-weight: 200;
+}
+.footer .footer-start .icons{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.footer .footer-start .icons img {
+    border: 1px solid #fff;
+    width: 15px;
+    height: 15px;
+    padding: 10px;
+    box-sizing: content-box; /*لما عملت بادنج وهاي الجملة ما كانت موجودة اختفت الصور, وهاي المشكلة فقط في SVG,
+    الانه الباندج بوخذ من الويدث لخطوط صورة SVG
+    علشان هيك بعمل box-sizing: contect-box
+    بتخليهم مثل ما هم وبتزيد الويدث والهايت عادي*/
+}
+.footer-end .row{
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.footer-end .footer-item{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.footer-end .footer-item ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* end footer */
