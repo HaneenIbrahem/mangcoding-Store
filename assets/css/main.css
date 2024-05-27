@@ -78,6 +78,74 @@ header .auth a:last-of-type {
 
 /* end header */
 
+/* start courses */
+.courses{
+    padding: 40px 0;
+    background-color: #fff;
+}
+.courses .row{
+    gap: 30px;
+    align-items: flex-start;
+}
+.course-items{
+    display: flex;
+    flex-wrap: wrap;
+    width: calc( (100% - 30px) / 2 );
+    gap: 30px;
+}
+.course{
+    box-shadow: 0px 7.437575340270996px 7.437575340270996px rgba(0, 0, 0, 0.05);
+    width: calc( (100% - 30px) / 2 );
+    padding: 30px 0;
+}
+.course-card{
+    position: relative;
+}
+.cource-details{
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.cource-details .row{
+    justify-content: space-around;
+}
+.cource-details .row:first-of-type span{
+    color: var(--mainColor);
+}
+.cource-details .row:last-of-type{
+    justify-content: flex-start;
+}
+.course-description{
+    width: calc( (100% - 30px) / 2 );
+}
+.course-card img{
+    width: 100%;
+    filter: brightness(60%);
+}
+.course-info{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    color: #fff;
+}
+.course-info span:first-of-type{
+    background-color: var(--mainColor);
+    padding: 20px;
+    justify-content: space-between;
+}
+.course-info span:last-of-type{
+    align-self: flex-end;
+}
+
+
+/* end courses */
 
 /*start testimonials*/
 .testimonials{
