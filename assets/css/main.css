@@ -51,7 +51,7 @@ header .auth a:last-of-type {
     color: #fff;
 }
 
-.bars-menu{
+.bars-menu {
     display: none;
 }
 
@@ -59,72 +59,141 @@ header .auth a:last-of-type {
     .nav {
         display: none;
     }
-    .bars-menu{
+
+    .bars-menu {
         display: inline-block;
         order: 1;
     }
-    .auth{
+
+    .auth {
         display: none;
     }
 }
+
 @media (max-width:400px) {
+
     /* .container{
         width: calc(100% - 40px);
     } */
-    .logo a{
+    .logo a {
         display: none;
     }
 }
 
 /* end header */
 
-/* start courses */
-.courses{
+/* start selected courses */
+
+.selected-courses {
     padding: 40px 0;
     background-color: #fff;
 }
-.courses .row{
+
+.selected-courses .row {
     gap: 30px;
     align-items: flex-start;
 }
-.course-items{
+
+/* end selected cources */
+
+/* start courses */
+.courses {
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+.courses .row {
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.course-items {
     display: flex;
     flex-wrap: wrap;
-    width: calc( (100% - 30px) / 2 );
+    width: 57%;
     gap: 30px;
 }
-.course{
+
+.course {
     box-shadow: 0px 7.437575340270996px 7.437575340270996px rgba(0, 0, 0, 0.05);
-    width: calc( (100% - 30px) / 2 );
-    padding: 30px 0;
+    width: calc((100% - 100px) / 2);
+    /* padding: 30px 0; */
+    border-radius: 20px;
 }
-.course-card{
+
+.course-card {
     position: relative;
 }
-.cource-details{
+
+.cource-details {
     padding: 30px 0;
     display: flex;
     flex-direction: column;
     gap: 20px;
     flex-wrap: wrap;
 }
-.cource-details .row{
+
+.cource-details .row {
     justify-content: space-around;
 }
-.cource-details .row:first-of-type span{
+
+.cource-details .row:first-of-type {
+    justify-content: flex-start;
+    padding: 0 20px;
+}
+
+.cource-details .row:first-of-type span {
     color: var(--mainColor);
 }
-.cource-details .row:last-of-type{
+
+.cource-details .row:first-of-type h3 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 14px;
+    text-align: left;
+    color: #131e31;
+}
+
+.cource-details .row:last-of-type {
+    justify-content: space-around;
     justify-content: flex-start;
+    padding: 0 20px;
 }
-.course-description{
-    width: calc( (100% - 30px) / 2 );
+
+.cource-details .row:last-of-type h3 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 10px;
+    text-align: left;
+    color: #969696;
 }
-.course-card img{
+
+.cource-details .row:last-of-type span {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 10px;
+    text-align: left;
+
+    color: #969696;
+}
+
+.course-description {
+
+    width: 40%;
+}
+
+.course-card img {
     width: 100%;
     filter: brightness(60%);
 }
-.course-info{
+
+.course-info {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -132,38 +201,83 @@ header .auth a:last-of-type {
     right: 0;
     display: flex;
     align-items: flex-start;
-    padding: 20px;
+    padding: 20px 0;
     color: #fff;
 }
-.course-info span:first-of-type{
+
+.course-info span:first-of-type {
     background-color: var(--mainColor);
     padding: 20px;
     justify-content: space-between;
 }
-.course-info span:last-of-type{
+
+.course-info span:last-of-type {
     align-self: flex-end;
 }
 
+.course-description h2 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 50px;
+    text-align: left;
+    color: #131e31;
+    padding: 30px 0 0 0;
+}
+
+.course-description span {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 9px;
+    text-align: left;
+    color: var(--mainColor);
+}
+
+.course-description p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 33px;
+    text-align: left;
+    color: #969696;
+    width: 70%;
+    padding: 50px 0;
+}
+
+.course-description a {
+    font-family: var(--subFont);
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: var(--mainColor);
+    color: #fff;
+}
 
 /* end courses */
 
 /*start testimonials*/
-.testimonials{
+.testimonials {
     text-align: center;
     padding: 40px 0;
 }
-.testimonials h2{
+
+.testimonials h2 {
     margin-bottom: 20px;
 }
-.testimonials .row{
+
+.testimonials .row {
     gap: 40px;
 }
-.testimonial{
+
+.testimonial {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     gap: 20px;
-    width: calc( (100% - 40px) / 2 );
+    width: calc((100% - 40px) / 2);
     align-items: flex-start;
     box-shadow: 5px 14.6474391222000122px 8.23719596862793px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -171,7 +285,8 @@ header .auth a:last-of-type {
     flex-basis: 400px;
     flex-grow: 1;
 }
-.testimonial :after{
+
+.testimonial :after {
     content: '';
     border-top: 50px solid #F4F4F4;
     border-bottom: 50px solid transparent;
@@ -182,50 +297,59 @@ header .auth a:last-of-type {
     right: 0;
     /* transform: rotate() ; */
 }
-.testimonial .user-info{
+
+.testimonial .user-info {
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
     align-items: center;
 }
-.testimonials .user-info img{
+
+.testimonials .user-info img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     display: flex;
 }
-.testimonial .user-info .user-data{
+
+.testimonial .user-info .user-data {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     gap: 10px;
     align-items: flex-start;
 }
-.testimonial .user-info .user-data span{
+
+.testimonial .user-info .user-data span {
     font-size: 12px;
     color: #646464;
 }
-.testimonial .rating{
+
+.testimonial .rating {
     display: flex;
     flex-wrap: wrap;
     gap: 7px;
 }
-.testimonial q{
+
+.testimonial q {
     color: #696969;
 }
-.testimonial blockquote p{
+
+.testimonial blockquote p {
     display: inline-block;
     padding: 0 10px;
 }
 
 @media (max-width: 950px) {
-    .testimonial .row{
+    .testimonial .row {
         flex-direction: column;
     }
-    .testimonial blockquote p{
+
+    .testimonial blockquote p {
         font-size: 14px;
     }
 }
+
 /* end testimonial */
 
 /* start footer */
@@ -277,44 +401,53 @@ header .auth a:last-of-type {
     line-height: 20px;
     font-weight: 200;
 }
-.footer .footer-start .icons{
+
+.footer .footer-start .icons {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
 }
+
 .footer .footer-start .icons img {
     border: 1px solid #fff;
     width: 15px;
     height: 15px;
     padding: 10px;
-    box-sizing: content-box; /*لما عملت بادنج وهاي الجملة ما كانت موجودة اختفت الصور, وهاي المشكلة فقط في SVG,
+    box-sizing: content-box;
+    /*لما عملت بادنج وهاي الجملة ما كانت موجودة اختفت الصور, وهاي المشكلة فقط في SVG,
     الانه الباندج بوخذ من الويدث لخطوط صورة SVG
     علشان هيك بعمل box-sizing: contect-box
     بتخليهم مثل ما هم وبتزيد الويدث والهايت عادي*/
 }
-.footer .footer-end{
+
+.footer .footer-end {
     flex-grow: 1;
 }
-.footer-end .row{
+
+.footer-end .row {
     justify-content: space-evenly;
     align-items: flex-start;
 }
-.footer-end .footer-item{
+
+.footer-end .footer-item {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     gap: 30px;
 }
-.footer-end .footer-item ul{
+
+.footer-end .footer-item ul {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     gap: 10px;
 }
+
 @media (max-width: 400px) {
-    .footer-start{
+    .footer-start {
         text-align: center;
         align-items: center;
     }
 }
+
 /* end footer */
