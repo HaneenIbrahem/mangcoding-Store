@@ -289,6 +289,9 @@ header .auth a:last-of-type {
     flex-direction: column;
     gap: 14px;
 }
+.servises .hidden {
+    display: none;
+}
 
 .servises .servise svg {
     background-color: #F5F5F5;
@@ -340,11 +343,8 @@ header .auth a:last-of-type {
 
 .servises .actions a svg {
     display: block;
-    /* Ensure the SVG is a block element */
     width: 100%;
-    /* Make the SVG take up the full container size */
     height: 100%;
-    /* Make the SVG take up the full container size */
 }
 @media (max-width: 950px) {
     .about-info .row{
@@ -371,6 +371,13 @@ header .auth a:last-of-type {
     .servises .servise {
         width: 100%;
     }
+    .servises .actions a {
+        display: none;
+    }
+    .servises .hidden {
+        display: block;
+    }
+    
 }
 
 /* end about-us */
@@ -589,6 +596,7 @@ header .auth a:last-of-type {
     bottom: 0;
     left: 0;
     right: 0;
+    justify-content: space-between;
     display: flex;
     align-items: flex-start;
     padding: 20px 0;
@@ -603,7 +611,6 @@ header .auth a:last-of-type {
 
 .course-info span:last-of-type {
     align-self: flex-end;
-    /* padding-left: 120px; */
 }
 
 .course-description h2 {
@@ -655,15 +662,18 @@ header .auth a:last-of-type {
         width: 100%;
     }
     .course-description{
-        width: 100%;
         justify-content: center;
+    align-items: center;
+    text-align: center;
+        width: 100%;
     }
-    /* .course-description p {
+    .course-description p {
         text-align: center;
+        width: 100%;
     }
     .course-description h2 {
         text-align: center;
-    } */
+    }
     .course-description h2 br {
         display: none;
     }
